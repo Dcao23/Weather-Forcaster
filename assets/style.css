@@ -1,0 +1,21 @@
+header {
+    text-align: center;
+    color:whitesmoke;
+    font-size: 44px;
+    background-color: rgb(21, 158, 140);
+    border-radius: 2%;
+}
+
+aside {
+    display: flex;
+}
+
+.history {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main {
+    text-align: center;
+}
+
