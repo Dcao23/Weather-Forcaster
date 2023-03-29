@@ -1,6 +1,6 @@
 // Global Scope Variables
-var weatherApiKey = '913e4ecb2e82a023f127e2c8a73988fa';
-var citySearch = '';
+var weatherApiKey = 'b26a7b32136abceaf67e1d79b9e1b6cb';
+var city = '';
 var currentDate = dayjs().format('MM/DD/YYYY');
 var upcomingForcastEl = $('.upcomingForecast');
 var todaysForecast = $('.todaysForecast');
@@ -43,6 +43,7 @@ function renderSearchHistory() {
 
 // Function to render weather API
 
+
 // Function runs on page load, it uses City as the cityName for an example so we can populate the page before the user even searches anything.
 function initLoad() {
     var previousSearchStorage = JSON.parse(localStorage.getItem('city'));
@@ -53,3 +54,4 @@ function initLoad() {
     renderForecast();
 };
 
+initLoad();
